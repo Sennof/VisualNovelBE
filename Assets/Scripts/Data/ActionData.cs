@@ -1,0 +1,15 @@
+using AYellowpaper.SerializedCollections;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "New Action", menuName = "Data/Action", order = 1)]
+public class ActionData : ScriptableObject
+{
+    [Header("Visualized information")]
+    [Tooltip("Title of the action")]
+    public string Title;
+
+    [Header("Information for logic")]
+    [Tooltip("Effects obtained from the action")]
+    [SerializedDictionary("Effect", "Value")]
+    public SerializedDictionary<ActionEffectEnum, int> Effects;
+}
