@@ -18,6 +18,5 @@ MonoBehaviour:
   Dialogues:
   - {fileID: 11400000, guid: 1df6e4c8d0a94054081615db120aac27, type: 2}
   - {fileID: 11400000, guid: 31de9a474e2fadd40b10213de717ec86, type: 2}
-  - {fileID: 11400000, guid: 2c9e1ed7588a09d448125a130a3d7e87, type: 2}
   IsPaid: 0
   Price: 0

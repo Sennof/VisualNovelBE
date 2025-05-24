@@ -13,6 +13,8 @@ public class HistoryData : ScriptableObject
     public Sprite Banner;
     [Tooltip("The color on which the background color depends")]
     public Color ThemeColor;
+    [Tooltip("The genres of the story")]
+    public List<HistoryGenreEnum> Genres;
 
     [Header("Information for logic")]
     [Tooltip("Global story index among other stories")]
