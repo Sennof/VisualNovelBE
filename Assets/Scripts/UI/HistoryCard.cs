@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class HistoryCard : MonoBehaviour
 {
     [SerializeField] private Image _bannerImage;
@@ -16,6 +17,11 @@ public class HistoryCard : MonoBehaviour
         _genre.text = GenerateGenreText(data.Genres);
         _episodeNum.text = $"Серия $ из {data.Episodes.Count}"; //instead of $, there will be a download from the save
         _description.text = data.Description;
+    }
+
+    public void SelectStory()
+    {
+
     }
 
     private string GenerateGenreText(List<HistoryGenreEnum> genres)
