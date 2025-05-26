@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c34260b936e4b14ab23c20e83660698
+guid: 9c26d7796c2e6b6419839afd933bcd3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3736506364813609741
-    second: OutlineV48LB_0
+      213: 921035831109337819
+    second: BSlicedRoundedSquare84_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 84, y: 0, z: 84, w: 84}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OutlineV48LB_0
+      name: BSlicedRoundedSquare84_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 244
-        height: 244
+        width: 252
+        height: 252
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0b83bfedbcbad330800000000000000
-      internalID: 3736506364813609741
+      spriteID: bd2cda2653d28cc00800000000000000
+      internalID: 921035831109337819
       vertices: []
       indices: 
       edges: []
@@ -165,7 +165,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OutlineV48LB_0: 3736506364813609741
+      BSlicedRoundedSquare84_0: 921035831109337819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
