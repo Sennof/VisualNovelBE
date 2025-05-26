@@ -11,8 +11,17 @@ public class HistoryCard : MonoBehaviour
     [SerializeField] private TMP_Text _episodeNum;
     [SerializeField] private TMP_Text _description;
 
-    public void Initialize(HistoryData data)
+    private WindowSwitcher _windowSwitcher;
+    private EpisodesWindowSetter _episodesWindowSetter;
+
+    private HistoryData _historyData;
+
+    public void Initialize(HistoryData data, EpisodesWindowSetter epSetter, WindowSwitcher wSwitcher)
     {
+        _historyData = data;
+        _episodesWindowSetter = epSetter;
+        _windowSwitcher = wSwitcher;
+
         _bannerImage.sprite = data.Banner;
         _genre.text = GenerateGenreText(data.Genres);
         _episodeNum.text = $"Серия $ из {data.Episodes.Count}"; //instead of $, there will be a download from the save
@@ -21,7 +30,8 @@ public class HistoryCard : MonoBehaviour
 
     public void SelectStory()
     {
-
+        _windowSwitcher.SwitchWindow(1);
+        _episodesWindowSetter.SetEpisodes(_historyData.Episodes);
     }
 
     private string GenerateGenreText(List<HistoryGenreEnum> genres)

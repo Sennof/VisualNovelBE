@@ -8,6 +8,9 @@ public class HistoryCardGenerator : MonoBehaviour
     [SerializeField] private Transform _cardFolder;
     [SerializeField] private GameObject _cardPrefab;
 
+    [SerializeField] private EpisodesWindowSetter _episodesWindowSetter;
+    [SerializeField] private WindowSwitcher _windowSwitcher;
+
     private HistoryData[] _histories;
     private List<GameObject> _generatedCards;
 
@@ -30,7 +33,7 @@ public class HistoryCardGenerator : MonoBehaviour
         foreach(HistoryData data in _histories)
         {
             GameObject genCard = Instantiate(_cardPrefab, _cardFolder);
-            genCard.GetComponent<HistoryCard>().Initialize(data);
+            genCard.GetComponent<HistoryCard>().Initialize(data, _episodesWindowSetter, _windowSwitcher);
         }
     }
 }

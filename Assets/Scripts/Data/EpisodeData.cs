@@ -11,8 +11,6 @@ public class EpisodeData : ScriptableObject
     [Header("Information for logic")]
     [Tooltip("Local episode index among other episodes in the story")]
     public int Index;
-    [Tooltip("Is it available for the player to complete")]
-    public bool IsAvailiable;
     [Tooltip("All dialogues of the episode")]
     public List<DialogueData> Dialogues;
 

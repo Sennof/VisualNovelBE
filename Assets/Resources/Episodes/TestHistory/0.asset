@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   Title: First test episode
-  Index: 0
+  Index: 1
   IsAvailiable: 1
   Dialogues:
   - {fileID: 11400000, guid: 1df6e4c8d0a94054081615db120aac27, type: 2}

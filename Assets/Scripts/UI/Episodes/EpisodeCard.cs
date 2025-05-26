@@ -9,28 +9,28 @@ public class EpisodeCard : MonoBehaviour
     [SerializeField] private TMP_Text _title;
 
     [SerializeField] private Image _lockIcon;
-    [SerializeField] private List<Sprite> _lockerIcons;
+    [SerializeField] private List<Color> _lockerColors;
 
-    public void Initialize(EpisodeData episodeData, bool isPrevEpAvailiable)
+    public void Initialize(EpisodeData episodeData, bool isPrevEpAvailiable) //TODO: check save if availiable
     {
         _index.text = episodeData.Index.ToString();
         _title.text = episodeData.Title.ToString();
-        SetIcon(episodeData.IsAvailiable, isPrevEpAvailiable);
+        SetIcon(episodeData.IsPaid, isPrevEpAvailiable);
     }
 
-    private void SetIcon(bool isAvailiable, bool isPrevEpAvailiable)
+    private void SetIcon(bool isPaid, bool isPrevEpAvailiable)
     {
         //TODO: check savedata if user have already bought the story => return;
         _lockIcon.gameObject.SetActive(true);
 
-        if (!isAvailiable)
+        if (isPaid)
         {
-            _lockIcon.sprite = _lockerIcons[2];
+            _lockIcon.color = _lockerColors[1];
             return;
         }
 
-        if (isPrevEpAvailiable)
-            _lockIcon.sprite = _lockerIcons[1];
+        if (!isPrevEpAvailiable)
+            _lockIcon.color = _lockerColors[0];
         else
             _lockIcon.gameObject.SetActive(false);
     }
