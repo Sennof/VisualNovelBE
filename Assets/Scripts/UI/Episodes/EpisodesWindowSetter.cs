@@ -6,6 +6,8 @@ public class EpisodesWindowSetter : MonoBehaviour
     [SerializeField] private Transform _cardsFolder;
     [SerializeField] private GameObject _episodeCardPrefab;
 
+    [SerializeField] private WindowSwitcher _windowSwitcher;
+
     private List<GameObject> _genCards = new(); 
 
     public void SetEpisodes(List<EpisodeData> episodes)
@@ -16,7 +18,7 @@ public class EpisodesWindowSetter : MonoBehaviour
         {
             int prevEpId = (i > 0) ? i - 1 : 0;
             GameObject genCard = Instantiate(_episodeCardPrefab, _cardsFolder);
-            genCard.GetComponent<EpisodeCard>().Initialize(episodes[i], true);
+            genCard.GetComponent<EpisodeCard>().Initialize(episodes[i], true, _windowSwitcher);
             _genCards.Add(genCard);
         }
     }

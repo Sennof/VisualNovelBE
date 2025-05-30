@@ -8,4 +8,8 @@ public class ReplicaData : ScriptableObject
     public PersonData Character;
     [Tooltip("A line spoken by a character")]
     public string Text;
+
+    [Header("Information for logic")]
+    [Tooltip("The place of the screen to which the background is attached")]
+    public BgOffsetEnum OffsetType = BgOffsetEnum.None;
 }

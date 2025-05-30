@@ -12,4 +12,8 @@ public class ActionData : ScriptableObject
     [Tooltip("Effects obtained from the action")]
     [SerializedDictionary("Effect", "Value")]
     public SerializedDictionary<ActionEffectEnum, int> Effects;
+    [Tooltip("The parameter is responsible for paying for the replica")]
+    public bool IsPaid;
+    [Tooltip("Cost per replica")]
+    public int Price = 0;
 }

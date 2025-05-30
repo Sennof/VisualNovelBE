@@ -11,11 +11,27 @@ public class EpisodeCard : MonoBehaviour
     [SerializeField] private Image _lockIcon;
     [SerializeField] private List<Color> _lockerColors;
 
-    public void Initialize(EpisodeData episodeData, bool isPrevEpAvailiable) //TODO: check save if availiable
+    private EpisodeData _data;
+
+    private WindowSwitcher _windowSwitcher;
+    private StoryTeller _storyTeller;
+
+    public void Initialize(EpisodeData episodeData, bool isPrevEpAvailiable, WindowSwitcher windowSwitcher) //TODO: check save if availiable
     {
+        _storyTeller = FindFirstObjectByType<StoryTeller>();
+        _windowSwitcher = windowSwitcher;
+
+        _data = episodeData;
+
         _index.text = episodeData.Index.ToString();
         _title.text = episodeData.Title.ToString();
         SetIcon(episodeData.IsPaid, isPrevEpAvailiable);
+    }
+
+    public void Select()
+    {
+        _storyTeller.SetData(_data);
+        _windowSwitcher.SwitchWindow(2);
     }
 
     private void SetIcon(bool isPaid, bool isPrevEpAvailiable)
