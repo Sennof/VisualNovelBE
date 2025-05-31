@@ -11,5 +11,5 @@ public class ReplicaData : ScriptableObject
 
     [Header("Information for logic")]
     [Tooltip("The place of the screen to which the background is attached")]
-    public BgOffsetEnum OffsetType = BgOffsetEnum.None;
+    public BgOffsetEnum OffsetType = BgOffsetEnum.Center;
 }

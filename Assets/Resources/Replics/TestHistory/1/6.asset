@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30a7ac9077fe13b4a9367ff2bccf572f, type: 3}
-  m_Name: 1
+  m_Name: 6
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: cb742094cf33ff7458daa26ad7edf9f1, type: 2}
-  Text: lalalala
-  OffsetType: 0
+  Character: {fileID: 11400000, guid: 161211929e3adda4fa87b0abd1f1b472, type: 2}
+  Text: sasasa
+  OffsetType: 1

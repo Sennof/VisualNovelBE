@@ -1,8 +1,7 @@
 using UnityEngine;
 public enum BgOffsetEnum
 {
-    None = 0,
-    Left = 1,
-    Center = 2, 
-    Right = 3,
+    Left = 0,
+    Center = 1, 
+    Right = 2,
 }

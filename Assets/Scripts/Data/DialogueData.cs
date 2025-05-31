@@ -4,6 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Dialogue", menuName = "Data/Dialogue", order = 1)]
 public class DialogueData : ScriptableObject
 {
+    [Header("Visuzalized information")]
+    [Tooltip("Background image")]
+    public Sprite BackgroundImage;
+
     [Header("Information for logic")]
     [Tooltip("Character cues, after which the player will be given a choice")]
     public List<ReplicaData> Replics;

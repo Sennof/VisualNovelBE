@@ -37,4 +37,9 @@ public class StoryTeller : MonoBehaviour
             return GetReplica();
         }
     }
+
+    public Sprite GetBg()
+    {
+        return _dialogues[_dialogueIndex].BackgroundImage;
+    }
 }

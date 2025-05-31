@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becbb6ee60f41ad46b506837c1b65c26, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
+  BackgroundImage: {fileID: 21300000, guid: 7f56cc646cea6fb4eadcc6a365d67166, type: 3}
   Replics:
   - {fileID: 11400000, guid: 0b6b4f7ce291a404389e42ca3f6be518, type: 2}
+  - {fileID: 11400000, guid: 99669e632043b2c4382942ab7ff53300, type: 2}
+  - {fileID: 11400000, guid: e25c6022f36f7d64e8f577b94c59ab58, type: 2}
+  - {fileID: 11400000, guid: 0a0864c3adf9a054895860fcd11d952a, type: 2}
+  - {fileID: 11400000, guid: 19d31da0c6dc53042a70725cdeb04ce7, type: 2}
+  - {fileID: 11400000, guid: 31403d3a376193840bb0f7de8cd70442, type: 2}
   Actions:
   - {fileID: 11400000, guid: 9f5d45bd3aa275645ab7e91af1932917, type: 2}
   - {fileID: 11400000, guid: 89acd3921c6a656489bf6e2e86e2ed58, type: 2}

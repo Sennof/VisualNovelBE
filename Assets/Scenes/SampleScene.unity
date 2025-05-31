@@ -3484,11 +3484,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1915408236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 1400}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &892007703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6993,7 +6993,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 0}
+  m_SizeDelta: {x: 3240, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809254026
 MonoBehaviour:
@@ -7008,7 +7008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7350,6 +7350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storyTeller: {fileID: 2020725479}
+  _backgroundSetter: {fileID: 2020725482}
   _characterName: {fileID: 1093448117}
   _replica: {fileID: 354148346}
 --- !u!114 &1915408238
@@ -7628,6 +7629,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2020725480}
   - component: {fileID: 2020725479}
+  - component: {fileID: 2020725482}
+  - component: {fileID: 2020725481}
   m_Layer: 0
   m_Name: Story
   m_TagString: Untagged
@@ -7663,6 +7666,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1789367402}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020725481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020725478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69536067a798e24785564533b8091f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterImage: {fileID: 892007703}
+--- !u!114 &2020725482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020725478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53fbcca6479b4840acc33cab95971bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _backgroundImage: {fileID: 1809254026}
+  _characterUISetter: {fileID: 2020725481}
 --- !u!1 &2051996453
 GameObject:
   m_ObjectHideFlags: 0

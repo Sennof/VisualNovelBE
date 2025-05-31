@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becbb6ee60f41ad46b506837c1b65c26, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
+  BackgroundImage: {fileID: 21300000, guid: 7f56cc646cea6fb4eadcc6a365d67166, type: 3}
   Replics:
   - {fileID: 11400000, guid: 99669e632043b2c4382942ab7ff53300, type: 2}
   - {fileID: 11400000, guid: e25c6022f36f7d64e8f577b94c59ab58, type: 2}
