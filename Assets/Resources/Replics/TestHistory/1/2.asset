@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   Character: {fileID: 11400000, guid: 3e193bf22bb40e84fa5348bf9551bfc5, type: 2}
-  Text: lololo
+  Text: "\u0414\u0430\u0430 \u0440\u0438\u043B\u0438"
+  OffsetType: 2

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   Character: {fileID: 11400000, guid: 161211929e3adda4fa87b0abd1f1b472, type: 2}
-  Text: sasasa
+  Text: "\u0412\u0441\u0435\u043C \u043F\u043E\u043A\u0430"
   OffsetType: 1

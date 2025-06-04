@@ -18,8 +18,8 @@ public class BackgroundSetter : MonoBehaviour
         if (image != null)
             SetImage(image);
 
-        if(characterImage != null)
-            characterImage = null;
+        if(_characterImage != null)
+            _characterImage = null;
 
         if(_movingCor != null)
         {

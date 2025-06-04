@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class StoryTeller : MonoBehaviour
@@ -19,6 +18,12 @@ public class StoryTeller : MonoBehaviour
 
     public ReplicaData GetReplica()
     {
+        if (_dialogues.Count == _dialogueIndex)
+        {
+            _windowSwitcher.SwitchWindow(1);
+            return null;
+        }
+
         if (_dialogues[_dialogueIndex].Replics.Count > _replicaIndex)
         {
             _replicaIndex++;
@@ -26,20 +31,14 @@ public class StoryTeller : MonoBehaviour
         }
         else
         {
-            if(_dialogues.Count - 1 == _dialogueIndex)
-            {
-                _windowSwitcher.SwitchWindow(1);
-                return null;
-            }
 
             _dialogueIndex++;
             _replicaIndex = 0;
-            return GetReplica();
+            return null;
         }
     }
 
-    public Sprite GetBg()
-    {
-        return _dialogues[_dialogueIndex].BackgroundImage;
-    }
+    public List<ActionData> GetActions() => _dialogues[_dialogueIndex-1].Actions;
+
+    public Sprite GetBg() => _dialogues[_dialogueIndex].BackgroundImage;
 }

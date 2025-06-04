@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a204e32f659e4594b8c5d868d5c3d, type: 3}
   m_Name: TestHistory
   m_EditorClassIdentifier: 
-  Title: Test
-  Description: This history was created to test game's functions
+  Title: "\u0422\u0435\u0441\u0442"
+  Description: "\u0422\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043C \u043A\u043E\u0440"
   Banner: {fileID: 0}
-  ThemeColor: {r: 0.7830189, g: 0.43952474, b: 0.43952474, a: 0}
-  Genres: 0000000002000000
+  ThemeColor: {r: 1, g: 1, b: 1, a: 0}
+  Genres: 0300000000000000
   Index: 0
   Episodes:
   - {fileID: 11400000, guid: 4b44f5d64b7d7f440bb7021c3bc3fefc, type: 2}

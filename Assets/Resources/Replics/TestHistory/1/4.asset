@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a7ac9077fe13b4a9367ff2bccf572f, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: 161211929e3adda4fa87b0abd1f1b472, type: 2}
-  Text: sasasa
-  OffsetType: 0
+  Character: {fileID: 11400000, guid: 3e193bf22bb40e84fa5348bf9551bfc5, type: 2}
+  Text: "\u041F\u043E\u0447\u0442\u0438 \u043F\u043E\u0447\u0442\u0438"
+  OffsetType: 2

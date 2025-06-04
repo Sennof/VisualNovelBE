@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f1afb56a554a44cb5c6929e2bf392d, type: 3}
   m_Name: 0
   m_EditorClassIdentifier: 
-  Title: First test episode
+  Title: "\u0417\u043D\u0430\u043A\u043E\u043C\u0441\u0442\u0432\u043E"
   Index: 1
-  IsAvailiable: 1
   Dialogues:
   - {fileID: 11400000, guid: 1df6e4c8d0a94054081615db120aac27, type: 2}
-  - {fileID: 11400000, guid: 31de9a474e2fadd40b10213de717ec86, type: 2}
+  - {fileID: 11400000, guid: 1df6e4c8d0a94054081615db120aac27, type: 2}
   IsPaid: 0
   Price: 0
