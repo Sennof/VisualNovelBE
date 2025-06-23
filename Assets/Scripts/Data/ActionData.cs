@@ -9,9 +9,12 @@ public class ActionData : ScriptableObject
     public string Title;
 
     [Header("Information for logic")]
+    [Tooltip("Required relationship")]
+    [SerializedDictionary("Relationship", "Value")]
+    public SerializedDictionary<RelationhshipEnum, int> RequiredRelationship;
     [Tooltip("Effects obtained from the action")]
     [SerializedDictionary("Effect", "Value")]
-    public SerializedDictionary<ActionEffectEnum, int> Effects;
+    public SerializedDictionary<RelationhshipEnum, int> Effects;
     [Tooltip("The parameter is responsible for paying for the replica")]
     public bool IsPaid;
     [Tooltip("Cost per replica")]
